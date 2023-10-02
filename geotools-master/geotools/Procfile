@@ -1,0 +1,1 @@
+web: gunicorn geotools.wsgi --log-file -
