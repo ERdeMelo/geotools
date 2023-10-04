@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1>Digite seu nome</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" name ="submit" value="Enviar">
+</form>
+
+    {% if submitbutton == "Enviar" %}
+    <h1> Seu nome é {{ your_name }}</h1>
+    {% endif %}
+
+</body>
+</html>
